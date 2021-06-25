@@ -75,5 +75,5 @@ then if I have made changes on the other computer or github directly use
 
 git pull
 
-
+another small change ;0 let's see if i can see it with a git status from dell
 

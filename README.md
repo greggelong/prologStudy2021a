@@ -100,6 +100,17 @@ and will soon no longer work.
 so I made a token and I will try that pat.
 
 
+***
+Git on VS code on surface laptop go 
+
+remember you also need to commit then push changes made here
+
+you do it through sorce controle with the check and message and then
+
+push to github from the ... menue
+
+
+
 
 
 ## lists chapter 4
@@ -129,7 +140,7 @@ To do this you don't even need to loop through the list
 
 just divide the head and tail in the right place and 
 
-unification and 
+unification and matching.  
 
 
 

@@ -28,6 +28,7 @@ and choose the Ubuntu Linux as the subsystem.
 
 
 
+
 I have also linked VS code  wiht my github and published the folder there
 
 Now I am editing the document on my linux Dell after having cloned the repo
@@ -41,5 +42,13 @@ changes. I like working with proglog on my Dell and since I am not wrting
 demanding javascript for the browser my slow compter works just fine
 
 also It will hep me review my comand line git. Which has become pretty rusty
+
+
+I have just changed and pushed the above from my Dell 
+
+now I am making changes to the readme directly on github 
+
+to see if I can pull the changes ;)
+
 
 

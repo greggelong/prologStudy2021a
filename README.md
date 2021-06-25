@@ -71,9 +71,15 @@ the origin is set from the clone
 
 then you enter GitHub user name and password
 
-then if I have made changes on the other computer or github directly use
+then if I have made changes on the other computer or github directly use first use
 
-git pull
+git fetch //to see if there are any changes
+
+git status // to see what to do
+
+git pull  // to pull the changes
 
 another small change ;0 let's see if i can see it with a git status from dell
+
+i saw it
 

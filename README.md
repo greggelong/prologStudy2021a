@@ -87,6 +87,20 @@ when working on swipl from Linux terminal you can use
 
 the command 'make.'  to reload changed files.
 
+More git stuff:
+
+it's been a while since i have been pushing and pulling
+
+and GitHub has changed it authentication policy
+
+Basic authentication using a password to Git is deprecated 
+
+and will soon no longer work. 
+
+so I made a token and I will try that pat.
+
+
+
 
 ## lists chapter 4
 
@@ -116,4 +130,6 @@ To do this you don't even need to loop through the list
 just divide the head and tail in the right place and 
 
 unification and 
+
+
 

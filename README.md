@@ -56,7 +56,14 @@ git clone
 
 git status 
 
-- if changes this will give an option to git add or git commit -a "change message"
+- if changes this will give an option to git add or 
+- they changed files will be in red
+
+git add {file name}
+
+git status // again to see the files ready to 
+
+git commit -m "some message"
 
 git push origin master  
 

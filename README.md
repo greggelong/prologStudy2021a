@@ -16,5 +16,30 @@ but I also have a copy running from my Linux Ubuntu system
 
 I can access the folder on the windows c drive using this path
 
-/mnt/c/Users/gkrei/Documents/Prolog/LearnPrologNow  
+/mnt/c/Users/gkrei/Documents/Prolog/prologStudy2021
+
+I set up visual studio code to wit vsc-prolog which works pretty well.
+
+with the linux subsystem I can run the code if I first
+
+do a command Terminal:Create New Intergrated Terminal with Profile
+
+and choose the Ubuntu Linux as the subsystem.
+
+
+
+I have also linked VS code  wiht my github and published the folder there
+
+Now I am editing the document on my linux Dell after having cloned the repo
+
+using $ git clone https://github.com/greggelong/prologStudy2021a.git
+
+I will do the next Chapter of lern prolog now on my dell. and push the 
+
+changes. I like working with proglog on my Dell and since I am not wrting 
+
+demanding javascript for the browser my slow compter works just fine
+
+also It will hep me review my comand line git. Which has become pretty rusty
+
 

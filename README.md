@@ -59,7 +59,7 @@ git status
 - if changes this will give an option to git add or 
 - they changed files will be in red
 
-git add {file name}
+git add {file name}  // or git add .  for multiple files
 
 git status // again to see the files ready to 
 
@@ -82,4 +82,38 @@ git pull  // to pull the changes
 another small change ;0 let's see if i can see it with a git status from dell
 
 i saw it
+
+when working on swipl from Linux terminal you can use 
+
+the command 'make.'  to reload changed files.
+
+
+## lists chapter 4
+
+Prolog lists are really something else. 
+
+They don't really have indexes as in other procedural programing languages.  
+
+they just use things like []  and | to divide head from tail
+
+and if you need to search through a list you use recursion
+
+but some really cool stuff can just with pattern matching
+
+take for example exercise 4.4 from learn prolong now:
+
+> Exercise  4.4 Write a predicate swap12(List1,List2) which checks whether List1 is identical to List2 , except that the first two elements are exchanged. 
+
+
+``` prolog
+
+swap12([X,Y|Z],[Y,X|Z]).
+
+```
+
+To do this you don't even need to loop through the list 
+
+just divide the head and tail in the right place and 
+
+unification and 
 

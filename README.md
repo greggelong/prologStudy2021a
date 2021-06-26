@@ -143,4 +143,62 @@ just divide the head and tail in the right place and
 unification and matching.  
 
 
+```prolog
 
+tran(jedan,one).
+tran(dva,two).
+tran(tri,three).
+tran(cetiri,four).
+tran(pet,five).
+tran(sest,six).
+tran(sedam,seven).
+tran(osam,eight).
+tran(devet,nine). 
+
+
+listtran([],[]).
+
+listtran([G|Tg],[E|Te]):-
+  tran(G,E),
+  listtran(Tg,Te).
+
+```
+
+This is a simple list translator for numbers in Serbian
+
+and English it is based on the list exercises
+
+
+## chapter 5 introduces Arithmetic and its use in lists
+
+look at this clause to check if something is even
+
+```prolog
+isEven(X):- 0 is mod(X,2).
+
+```
+
+so elegant and simple
+
+'is' tells Prolog not to treat it as a regular term.
+
+and How do you get a length of a list
+
+well, you use logic
+
+```prolog
+len([],0).
+len([_|T],N):- 
+	len(T,X),
+	N is X +1.
+
+```
+
+See this great video. He steps us through the stack,
+
+of recursive calls. You can also put on trace and follow it
+
+through a query of len([1,2,3,4],X).
+
+
+https://www.youtube.com/watch?v=xl7NzdcgqXo

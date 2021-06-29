@@ -4,7 +4,7 @@ is_digesting(X,Y):-
 		is_digesting(Z,Y).
 
 
-just_ate(mosquito, blood(john)).
+just_ate(mosquito, blood(greg)).
 just_ate(frog,mosquito).
 just_ate(stork,frog).
 

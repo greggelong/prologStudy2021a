@@ -202,3 +202,48 @@ through a query of len([1,2,3,4],X).
 
 
 https://www.youtube.com/watch?v=xl7NzdcgqXo
+
+
+## chapter 6 more lists 
+
+I made a solver for the red blue green house puzzle.
+
+I did not only solve for zebra but coded up all the rules in 
+
+a very explicit way.  I assumed that the meaning of to the right or to the 
+
+left of meant to the right of or left of on the street and not immediately 
+
+to the right of or left of.  I came to the format thinking about defining
+
+grammars. Which is the topic of Chapter 7.
+
+```prolog
+s(X):- X = [_,_,_], 
+	member(house(red,english,_),X),
+	member(house(_,spanish,jaguar),X),
+	member(house(_,japanese,_),X),
+	member(house(blue,_,_),X),
+	member(house(green,_,_),X),
+	member(house(_,_,snail),X),
+	member(house(_,_,zebra),X),
+	%% japanese lives to the  right of snail  Note I needed to add round bracketes
+	(X = [house(_,_,snail),house(_,japanese,_),_];
+	X = [_,house(_,_,snail),house(_,japanese,_)];
+	X = [house(_,_,snail),_,house(_,japanese,_)]),
+	%% snail keeper lives to the left of blue house
+	(X = [house(_,_,snail),house(blue,_,_),_];
+	X = [_,house(_,_,snail),house(blue,_,_)];
+	X = [house(_,_,snail),_,house(blue,_,_)]).
+
+```
+
+---
+
+### note on swi prolog use 
+
+ working_directory(_,'c:/users/english teacher/documents/prologStudy2021a').
+
+ using this to change the directory on swi-prolog at school.
+
+ 

@@ -250,7 +250,7 @@ s(X):- X = [_,_,_],
 ## Chapter seven Context Free Grammars and Definite Clause Grammars
 
 
-I have written more than a few scrips in javaScript and 
+I have written more than a few scripts in javaScript and 
 
 Python using context free grammars.  I have used them to 
 

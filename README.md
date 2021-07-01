@@ -20,7 +20,7 @@ I can access the folder on the windows c drive using this path
 
 I set up visual studio code to wit vsc-prolog which works pretty well.
 
-with the linux subsystem I can run the code if I first
+with the Linux subsystem I can run the code if I first
 
 do a command Terminal:Create New Integrated Terminal with Profile
 
@@ -37,7 +37,7 @@ using $ git clone https://github.com/greggelong/prologStudy2021a.git
 
 I will do the next Chapter of learn prolog now on my dell. and push the 
 
-changes. I like working with proglog on my Dell and since I am not writing 
+changes. I like working with prolog on my Dell and since I am not writing 
 
 demanding JavaScript for the browser my slow computer works just fine
 
@@ -105,9 +105,9 @@ Git on VS code on surface laptop go
 
 remember you also need to commit then push changes made here
 
-you do it through sorce controle with the check and message and then
+you do it through source control with the check and message and then
 
-push to github from the ... menue
+push to github from the ... menu
 
 
 
@@ -246,4 +246,67 @@ s(X):- X = [_,_,_],
 
  using this to change the directory on swi-prolog at school.
 
- 
+
+## Chapter seven Context Free Grammars and Definite Clause Grammars
+
+
+I have written more than a few scrips in javaScript and 
+
+Python using context free grammars.  I have used them to 
+
+create L-systems for fractals, generate sentences in English 
+
+and Chinese and even used them to simulate Cuko the dog.
+
+In Prolog the main advantage is that the grammar works easily in both directions.
+
+It can recognize syntactically correct sentences as well as create them with 
+
+a simple prompt.  
+
+Definite Clause Grammars are:
+
+> essentially syntactic sugar, user-friendly notation that lets us write grammars in a natural way.
+
+here is a simple example.
+
+```prolog
+
+s --> np, vp.
+
+np --> det, n.
+
+vp --> v, np.
+vp --> v.
+
+det --> [the].
+det --> [a].
+
+n --> [woman].
+n --> [man].
+
+v --> [shoots].
+
+```
+
+is actually compiled and saved in prolog as:
+
+```prolog
+
+s(X,Z):- np(X,Y), vp(Y,Z).
+
+np(X,Z):- det(X,Y), n(Y,Z).
+
+vp(X,Z):- v(X,Y), np(Y,Z).
+
+vp(X,Z):- v(X,Z).
+
+det([the|W], W).
+det([a|W],W).
+
+n([woman|W],W).
+n([man|W], W).
+
+v([shoots|W],W).
+
+```

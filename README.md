@@ -313,23 +313,31 @@ v([shoots|W],W).
 
 ## Chapter eight More definite clause grammar.
 
-Changing a simple grammar to deal with a more realistic and 
+Changing a simple grammar to deal with a more realistic and complex 
 
-grammars such as accounting for subject/object, singular/plural, gender, etc
+grammar syntax (such as accounting for subject/object, singular/plural, gender, etc. . .)
 
-are a topic I have dealt with before in Python and JavaScript 
+can present challenges.
+
+I have dealt with before in Python and JavaScript 
 
 and I have dealt with them in, what LPN refers to as the naive way, by adding 
 
-extra clauses to capture subject and object ect.
+extra clauses to capture subject and object or singular plural.
 
-
+See my javaScript context free grammar:
 
 https://github.com/greggelong/cfg_description
 
-This has the benefit of being explicit and easy to read at least.
+Although naive as it may be, it has the benefit of being explicit and easy to read.
 
-but you can improve this by adding an argument to the np() noun phrase clause to do the same sort of thing
+but you can improve this by adding arguments to clauses in the grammar.
+
+For example, the 'np' noun phrase clause can be modified to take an argument, np(X).
+
+In the example below it can be used to ensure that a noun phrase in the subject 
+
+uses a subjective pronoun, and a noun phrase in the predicate uses a objective pronoun.
 
 ```prolog
 

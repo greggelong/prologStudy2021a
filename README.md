@@ -390,3 +390,16 @@ X = [a, woman] ;
 X = [a, man] ;
 X = [he] ;
 X = [she].
+
+
+## Max Bramer Logic Programming with Prolog
+
+After finishing with learning prolog now
+
+I am going on to the most recent prolog book
+
+LPWP the second edition in 2013  not that  recent
+
+but pretty good for a prolog book.  
+
+

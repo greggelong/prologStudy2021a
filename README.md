@@ -246,6 +246,10 @@ s(X):- X = [_,_,_],
 
  using this to change the directory on swi-prolog at school.
 
+  working_directory(_,'C:/Users/gkrei/Documents/Prolog/prologStudy2021/').
+
+  using this to change the directory os swi-prolog for windows 10 at home.  
+
 
 ## Chapter seven Context Free Grammars and Definite Clause Grammars
 

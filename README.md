@@ -402,4 +402,30 @@ LPWP the second edition in 2013  not that  recent
 
 but pretty good for a prolog book.  
 
+## Turbo Prolog
+
+A real blast from the past.  I am now using DosBox to run 
+
+Borland's Turbo Prolog.  I used this in my under-grad days.
+
+I was given a free copy by my teacher.  At the time
+
+I found it very difficult to understand logic programming
+
+having only done procedural programming.  
+
+It is similar to standard prolog.
+
+I love the interface.  It is really time travelling to go
+
+through the Turbo prolog book and exercises.
+
+![turboProlog.png](/turboProlog/turboProlog.png)
+
+
+
+
+
+
+
 

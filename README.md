@@ -1,8 +1,8 @@
 ## Learn Prolog now Notes
 
-Coming back to after a few years of it on the back burner
+Coming back to prolog after a few years of putting it on the back burner.
 
-I am using both SWI-prolog and GNU-prolog
+I am using both SWI-prolog and GNU-prolog.
 
 There are some differences in the procedural input and output and  of each.
 

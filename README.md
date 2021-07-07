@@ -402,6 +402,30 @@ LPWP the second edition in 2013  not that  recent
 
 but pretty good for a prolog book.  
 
+Bramer's style is very different. It appeals to the imperative programer in me
+
+that wants to do things.  Like print, convert, find.  As opposed to the declarative programmer
+
+that is all about the logic of the clauses.  A good example of this is he has so far used
+
+recursion in several examples but did not devote a chapter to it as other prolog books do.
+
+And in Chapter 5 we already cover input and output with out having discussed more prolog-y topics
+
+like lists.  
+
+His exercises also are somewhat imperative in out look for example
+
+in the chapter 4 on mathematical operations he has you write 
+
+a clause that gets an average of two numbers, but he does not make you 
+
+unify the two to some third variable. for example average(Num1,num2,AVG).
+
+he just has you write the answer as output.  
+
+
+
 ## Turbo Prolog
 
 A real blast from the past.  I am now using DosBox to run 

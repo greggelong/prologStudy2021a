@@ -2,6 +2,9 @@
 
 Coming back to prolog after a few years of putting it on the back burner.
 
+link to earlier repositories:
+https://github.com/greggelong/greg-family
+
 I am using both SWI-prolog and GNU-prolog.
 
 There are some differences in the procedural input and output and  of each.
@@ -448,7 +451,19 @@ through the Turbo prolog book and exercises.
 
 
 
+## Adventure in prolog also going through Merritt's book
 
+Aip is fun and I have included in the folder an adventure game 
+
+about my childhood home that in the same spirit of the book.
+
+Merritt has you apply forced failure and backtracking to look around 
+
+rooms.  He has you use dynamic predicates to manipulate the world.
+
+I translated similar logic to python and javaScript but the here the interaction is 
+
+by checking in a list, dictionary or object.  
 
 
 

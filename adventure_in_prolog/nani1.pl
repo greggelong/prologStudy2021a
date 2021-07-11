@@ -44,3 +44,9 @@ turned_off(flashlight).
 here(kitchen).
 
 
+% a complicated query to locate an item inside another item
+% in the office
+
+% ?- location(X,Y), location(Y,office),location(X,Y).
+% X = flashlight,
+% Y = desk ;

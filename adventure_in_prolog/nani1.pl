@@ -50,3 +50,22 @@ here(kitchen).
 % ?- location(X,Y), location(Y,office),location(X,Y).
 % X = flashlight,
 % Y = desk ;
+
+
+/*
+
+Merritt gives a nice example of the declartive and procedural meaning of prolog code
+
+The query: 
+
+?- location(X,kitchen), edible(X).
+
+Has two interpretations, declarative and procedural
+
+Logically (declaratively) it means "Is there an X such that X
+is located in the kitchen and X is edible?" 
+
+The procedural interpretation is: "First find an X located in the kitchen, and then test to see if it is
+edible. If it is not, go back and find another X in the kitchen and test it.
+Repeat until successful, or until there are no more XS in the kitchen. "
+*/

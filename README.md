@@ -483,5 +483,25 @@ edible. If it is not, go back and find another X in the kitchen and test it.
 Repeat until successful, or until there are no more XS in the kitchen. "
 
 
+## N.B. in Chapter seven you must use the anonymous variable _
+
+With swi-prolog :
+
+you must use the anonymous variable when retracting the dynamic here/1 clause 
+
+it must also be marked as dynamic using the at the top of the knowledge base  :- dynamic here/1.
+
+here wasn't being retracted with a regular variable and can lead to being in more than one place
+
+at a time.  
+
+```prolog
+
+move(Place):-
+    can_go(Place),
+    retract(here(_)),
+    asserta(here(Place)),
+    look.
 
 
+```

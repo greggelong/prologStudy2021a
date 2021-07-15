@@ -2,6 +2,9 @@
 
 %% mark dynamic predicates for Swi-prolog
 :- dynamic here/1.
+:- dynamic have/1.
+:- dynamic location/2.
+
 %% rooms that match the drawing
 %% five clauses all facts
 room(kitchen).
@@ -117,6 +120,30 @@ can_go(_):-
 move(Place):-
     can_go(Place),
     retract(here(_)),
-    asserta(here(Place)),
-    look.
+    asserta(here(Place)).
+
+%% dynamic location and have
+
+take(X):-
+    can_take(X),  %% tests
+    take_object(X). %% asserts and retracts
+
+%% tests
+
+can_take(Thing):-
+    here(Place),
+    location(Thing,Place).
+   %% fail with message
+can_take(Thing):-
+    write('There is no '), write(Thing),
+    write(' here.'),
+    nl, 
+    fail.
+
+%%retracts and asserts
+take_object(X):-
+    retract(location(X,_)),
+    assert(have(X)),
+    write('You have taken the '), 
+    write(X), nl.
 

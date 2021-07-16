@@ -505,3 +505,49 @@ move(Place):-
 
 
 ```
+
+## Merritt's Adventure in Prolog Chapter 8 recursion
+
+really cool practical demonstration of recursion with base/boundary case and recursive call.
+
+The example is looking for items nested in other items, 
+
+for example, a key, in an envelope in a desk, in the office.
+
+the recursive predicate we write is is_contained_in/2.
+```prolog
+%  A thing, T1, is contained in another thing, T2, 
+% if T1 is directly located in T2. (This is the boundary condition.)
+
+is_contained_in(T1,T2):-
+    location(T1,T2).
+
+%  A thing, T1, is contained in another thing ,T2, 
+% if some intermediate thing, X, is located in T2 and 
+%T1 is contained in X. (This is where we simplify and recurse.)
+
+is_contained_in(T1,T2):-
+    location(X, T2),
+    is_contained_in(T1,X).
+
+```
+
+
+What is really cool is that the by the logic of the database, it follows if we 
+
+take the envelope and put it our inventory.  it still contains the key !!! 
+
+?- is_contained_in(X,desk).
+X = flashlight ;
+false.
+
+?- inventory.
+  envelope
+true.
+
+?- location(X,envelope).
+X = stamp ;
+X = key.
+
+
+

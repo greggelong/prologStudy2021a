@@ -549,5 +549,29 @@ true.
 X = stamp ;
 X = key.
 
+## logo turtle for Swi-prolog
+
+I have downloaded a turtle library file from:
+
+https://arbeitsplattform.bildung.hessen.de/fach/informatik/swiprolog/turtlee.html
+
+and saved it to the swi-prolog library.
+
+this simple kb is a Hello World that draws a triangle
+
+```prolog
+:- use_module(library(turtlee)).
+
+
+go:-
+	turtle_init,
+	turtle_draw(100),
+	turtle_turn(120),
+	turtle_draw(100),
+	turtle_turn(120),
+	turtle_draw(100),
+	turtle_turn(120).
+```
+
 
 

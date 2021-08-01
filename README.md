@@ -610,4 +610,10 @@ drawside(Length,Level):-
 ```
 
 
+## turtle in turbo prolog
+
+I need to change the stack amount in options on the turbo-prolog editor if I had a lot of recursion
+
+for the cauliflower fractal at level 10 I set it to 4000 paragraphs
+
 

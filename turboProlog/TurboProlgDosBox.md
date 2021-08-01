@@ -27,3 +27,9 @@ a google drive folder is linked
 https://drive.google.com/file/d/1F2iNuEohlAo-mcHpcA-Pcxxs7orn5aRb/view
 
 seems ligit 
+
+
+I need to change the stack amount in options on the turbo-prolog editor if I had a lot of recursion
+
+for the cauliflower fractal at level 10 I set it to 4000 paragraphs
+
